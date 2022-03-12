@@ -1,0 +1,56 @@
+<!-- <h2>Products</h2>
+
+<div *ngFor="let product of products">
+
+  <h3>
+    <a [title]="product.name + ' details'" [routerLink]="['products',product.id]">
+      {{ product.name }}
+    </a>
+  </h3>
+
+  <p *ngIf="product.description">
+    Description: {{ product.description }}
+  </p>
+
+  <button type="button" (click)="share()">
+    Share
+  </button>
+  <app-product-alerts 
+  [product]="product"
+  (notify)="onNotify()">
+  </app-product-alerts>
+</div> -->
+
+    <!-- brand -->
+    <div class="brand">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="titlepage">
+                      <h2>Our Brand</h2>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="brand-bg">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 margin" *ngFor="let product of products">
+                      <div class="brand_box"  [title]="product.name + ' details'" [routerLink]="['products',product.id]">
+                          <img src="/assets/images/1.png" alt="img" />
+                          <h3>$<strong class="red">100</strong></h3>
+                          <span>{{product.name}}</span>
+                          <i><img src="/assets/images/star.png"/></i>
+                          <i><img src="/assets/images/star.png"/></i>
+                          <i><img src="/assets/images/star.png"/></i>
+                          <i><img src="/assets/images/star.png"/></i>
+                      </div>
+                  </div>
+                  <div class="col-md-12">
+                      <a class="read-more">See More</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- end brand -->
